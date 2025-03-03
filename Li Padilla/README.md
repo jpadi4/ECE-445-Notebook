@@ -7,3 +7,4 @@
 
 ### 2/27/15
 - purchase request for strain gauges/IMU cancelled, had to be resubmitted
+- created new purchase request for strain gauges/IMUs

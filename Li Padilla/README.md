@@ -4,3 +4,6 @@
 - Preparing for first meeting with TA 
 - Set up headings and subheadings for project proposal
 - Set up team contract document
+
+### 2/27/15
+- purchase request for strain gauges/IMU cancelled, had to be resubmitted

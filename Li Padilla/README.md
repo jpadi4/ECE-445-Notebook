@@ -11,5 +11,9 @@
 ### 2/19/2025
 - submitted request for strain gauges + IMU
 
+### 2/27/15
+- purchase request for strain gauges/IMU cancelled, had to be resubmitted
+- created new purchase request for strain gauges/IMUs
+
 ### 3/7/2025
 - Created the physical design drawing with sensor placements

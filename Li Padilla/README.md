@@ -86,3 +86,5 @@ void loop() {
     delay(500); 
 }
 ``` 
+
+- optionally display as graph using python (?)

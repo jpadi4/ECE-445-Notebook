@@ -38,6 +38,11 @@
     delay()
     delayMicroseconds()
 
+- ISP cable is only needed for programming the MCU
+- serial cable: need USB-to-serial adapter that's connected ot the ATtiny85 
+- USB-to-serial adapter (FTDI, CH340, etc.) to send and receive data between the ATtiny85 and computer
+    - TX (phys pin 2)/RX (phys pin 3) on ATtiny85 needs to be connected to adapter to send/receive data
+
 **Tentative steps for receiving analog input at MCU**
 1. connect op-amp output to analog pin on ATtiny85; in this case, we'll use pin 2/A3/PB3 
 2. set ATtiny85 to read analog signal (using an ATtiny85 for breadboard demo); ATtiny85 has ADC to convert analog input into digital input (output is value between 0-1023, corresponding to voltage input rang of 0V to VCC (usually 5V or 3.3V))
@@ -48,7 +53,7 @@
 
 ```cpp
 // specifies using PB3 as an analog input pin
-#define STRAIN_GAUGE_0 3
+#define STRAIN_GAUGE_0 7
 
 
 void setup() {

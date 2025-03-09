@@ -17,3 +17,67 @@
 
 ### 3/7/2025
 - Created the physical design drawing with sensor placements
+
+### 3/9/2025
+##### Researching how to display the output voltage of the voltage amplifier
+
+![](https://cdn.sparkfun.com/r/600-600/assets/f/8/f/d/9/52713d5b757b7fc0658b4567.png)
+![](https://sheepdogguides.com/arduino/attiny/ATtinyPinout.png)
+- the MCU will be reading digital input from the strain gauge and then we will eventually be using software-side programming for the communication display subsystem
+- ATtiny85 offers A1 (pin 7), A2 (pin 4) and A3 (pin 3) as analog inputs (min voltage for ATtiny85 ADC is 1.1 V)
+- should be connecting ; ATTiny85 supports the following Arduino commands:
+    pinMode()
+    digitalWrite()
+    digitalRead()
+    analogRead()
+    analogWrite()
+    shiftOut()
+    pulseIn()
+    millis()
+    micros()
+    delay()
+    delayMicroseconds()
+
+**Tentative steps for receiving analog input at MCU**
+1. connect op-amp output to analog pin on ATtiny85; in this case, we'll use pin 2/A3/PB3 
+2. set ATtiny85 to read analog signal (using an ATtiny85 for breadboard demo); ATtiny85 has ADC to convert analog input into digital input (output is value between 0-1023, corresponding to voltage input rang of 0V to VCC (usually 5V or 3.3V))
+3. write code to read analog input to display the value via UART
+    - read analog input using `analogRead()` at pin A3
+    - convert ADC value into corresponding voltage
+    - send information to UART to display in serial monitor
+
+```cpp
+// specifies using PB3 as an analog input pin
+#define STRAIN_GAUGE_0 3
+
+
+void setup() {
+
+    // init serial + baud rate
+    Serial.begin(9600);
+
+    // wait for serial connection
+    while(!Serial)
+
+    // set analog input pin
+    // unlike digital input pins, no need to set pinMode
+    Serial.println("Reading analog voltage from op-amp...");
+}
+
+void loop() {
+    // read analog val (0-1023)
+    int analogValue = analogRead(STRAIN_GAUGE_0)
+
+    // convert ADC val to voltage; 
+    float VCC = 3.3
+    float voltage = (analogValue * VCC) / 1023.0;
+
+    // print out voltage at serial (for now)
+    Serial.print("Analog Voltage: ");
+    Serial.print(voltage);
+    Serial.println(" V");
+
+    // delay before the next reading
+    delay(500); 
+}
+``` 

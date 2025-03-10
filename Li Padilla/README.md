@@ -88,3 +88,32 @@ void loop() {
 ``` 
 
 - optionally display as graph using python (?)
+
+### 3/10/2025
+- since we don't have a USB for UART yet, but we still want to show that the signal path of strain gauge -> opamp -> MCU -> communication display works, we are going to have MCU connect to an LED and light the LED if a voltage of 1.1V is exceeded (which is the turn-on voltage for the ADC on the MCU itself)
+
+```cpp
+#define LED_PIN PIN_PB2   // Pin for LED output
+#define STRAIN_GAUGE_0 A1 // specifies using PB3 as an analog input pin
+
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+    // read analog val (0-1023)
+    int analogValue = analogRead(STRAIN_GAUGE_0)
+
+    // convert ADC val to voltage; 
+    float VCC = 3.3
+    float voltage = (analogValue * VCC) / 1023.0;
+    
+  if (voltage >= 1.1) {  
+    digitalWrite(LED_PIN, HIGH); // Turn on LED
+  } else {
+    digitalWrite(LED_PIN, LOW);  // Turn off LED
+  }
+}
+
+```

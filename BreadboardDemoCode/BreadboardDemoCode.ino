@@ -1,5 +1,5 @@
 #define LED_PIN PIN_PB2   // Pin for LED output
-#define STRAIN_GAUGE_0 A1 // specifies using PB3 as an analog input pin
+#define STRAIN_GAUGE_0 A2 // specifies using PB3 as an analog input pin
 
 
 void setup() {

@@ -117,3 +117,16 @@ void loop() {
 }
 
 ```
+
+### 4/1/2025
+- downloaded MSP430 programmer; exploring programming options
+- recall:
+  - inputs:
+    - signal from strain gauge (3)
+    - signal from IMU
+  - outputs:
+    - led
+    - USB/uart (?)
+    - bluetooth
+
+- MSP430FR5994IPM MCU + CC2564CRVMR bluetooth

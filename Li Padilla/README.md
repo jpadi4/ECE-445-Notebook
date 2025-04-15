@@ -130,3 +130,19 @@ void loop() {
     - bluetooth
 
 - MSP430FR5994IPM MCU + CC2564CRVMR bluetooth
+
+### 4/2/2025
+- new strain gauge placements based on wheatstone bridge confucation
+- communication protocol pseudocode for FFT
+
+### 4/6/2025
+- create new 
+
+### 4/14/2025 
+- flesh out full game plan for next meeting
+
+**todo**
+- complete new LED code
+- complete IMU setup code
+- complete complete FFT code
+- fleshing out arduino code -> software program planning

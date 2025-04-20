@@ -1,9 +1,9 @@
-#define LED1 PIN_PB1    // Pin for LED1 output
-#define LED2 PIN_PB2    // rename for actual pin names
-#define LED3 PIN_PB3    // rename for actual pin names
-#define STRAIN_GAUGE_1 A1 // specifies using PB3 as an analog input pin
-#define STRAIN_GAUGE_2 A2 
-#define STRAIN_GAUGE_3 A3 
+#define LED1 PIN_PB2    // Pin for LED1 output
+#define LED2 PIN_PD3    // rename for actual pin names
+#define LED3 PIN_PD7    // rename for actual pin names
+#define STRAIN_GAUGE_1 PIN_PC1 // specifies using PB3 as an analog input pin
+#define STRAIN_GAUGE_2 PIN_PC2 
+#define STRAIN_GAUGE_3 PIN_PC3 
 
 
 // !! CHANGE DEFINITIONS BASED ON SCHEMATIC

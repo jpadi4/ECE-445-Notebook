@@ -1,3 +1,5 @@
+// Test program that lights up 1 LED if MCU receives 1.1V from Op-Amp
+
 #define LED1 PIN_PB2    // Pin for LED1 output
 #define STRAIN_GAUGE_1 PIN_PC1 // Pin for wheatstonebridge config1
 

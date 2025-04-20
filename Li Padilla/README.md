@@ -132,17 +132,26 @@ void loop() {
 - MSP430FR5994IPM MCU + CC2564CRVMR bluetooth
 
 ### 4/2/2025
-- new strain gauge placements based on wheatstone bridge confucation
+- new strain gauge placements based on wheatstone bridge configuration
 - communication protocol pseudocode for FFT
 
 ### 4/6/2025
-- create new 
+- create new set up code
+- ordered parts to assemble strain gauge on glove itself
 
 ### 4/14/2025 
 - flesh out full game plan for next meeting
 
 **todo**
 - complete new LED code
+- complete IMU setup code
+- complete complete FFT code
+- fleshing out arduino code -> software program planning
+
+### 4/19/2025 
+- test LED code uploaded with proper pinouts
+
+**todo**
 - complete IMU setup code
 - complete complete FFT code
 - fleshing out arduino code -> software program planning

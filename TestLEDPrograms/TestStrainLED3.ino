@@ -1,3 +1,5 @@
+// Test program that lights up 3 LED if MCU receives 1.1V from the 3 Op-Amps
+
 #define LED1 PIN_PB2    // Pin for LED1 output
 #define LED2 PIN_PD3    // rename for actual pin names
 #define LED3 PIN_PD7    // rename for actual pin names

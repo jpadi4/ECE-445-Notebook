@@ -3330,12 +3330,6 @@
 		(uuid "5777c67e-e95a-4f29-95c9-7cdfb8fbcc23")
 	)
 	(junction
-		(at 60.96 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6512f2c7-f8ed-4c32-ae73-352953a886a4")
-	)
-	(junction
 		(at 77.47 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3364,6 +3358,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3855dcc-0840-4068-8976-904b6244e61f")
+	)
+	(junction
+		(at 60.96 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a69407c8-19d4-4f86-b85c-e3e266ce27fe")
 	)
 	(junction
 		(at 237.49 137.16)
@@ -3527,7 +3527,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 91.44) (xy 251.46 95.25)
+			(xy 251.46 83.82) (xy 251.46 85.09)
 		)
 		(stroke
 			(width 0)
@@ -4457,6 +4457,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 92.71) (xy 251.46 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2f7ae02-9f1d-4694-8da0-a73952d1a736")
+	)
+	(wire
+		(pts
 			(xy 113.03 115.57) (xy 113.03 118.11)
 		)
 		(stroke
@@ -4666,7 +4676,7 @@
 		(uuid "b954e337-6bef-4a0c-99ce-dfd4385c2282")
 	)
 	(label "ISP"
-		(at 254 83.82 0)
+		(at 261.62 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5801,7 +5811,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 251.46 91.44 0)
+		(at 251.46 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5810,7 +5820,7 @@
 		(fields_autoplaced yes)
 		(uuid "10c961fc-5fac-4cda-aa02-24c0fdfcaff4")
 		(property "Reference" "#PWR0104"
-			(at 251.46 95.25 0)
+			(at 251.46 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5819,7 +5829,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 251.46 86.36 0)
+			(at 251.46 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5827,7 +5837,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 91.44 0)
+			(at 251.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5836,7 +5846,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 91.44 0)
+			(at 251.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5845,7 +5855,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 251.46 91.44 0)
+			(at 251.46 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6379,7 +6389,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 60.96 99.06 0)
+		(at 60.96 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6388,7 +6398,7 @@
 		(fields_autoplaced yes)
 		(uuid "294e80ee-d9f8-4081-921a-ab6cf71a5afb")
 		(property "Reference" "#PWR01"
-			(at 60.96 102.87 0)
+			(at 60.96 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6397,7 +6407,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 60.96 93.98 0)
+			(at 60.96 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6405,7 +6415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 99.06 0)
+			(at 60.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6414,7 +6424,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 99.06 0)
+			(at 60.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6423,7 +6433,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 99.06 0)
+			(at 60.96 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7234,6 +7244,75 @@
 			(project "445pcb_round3"
 				(path "/8efcc5b4-97b0-4b2b-85b0-3435af67eb97"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:MBR0520")
+		(at 251.46 88.9 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "526f3f00-ae8a-49ab-b247-a17500773bf5")
+		(property "Reference" "D3"
+			(at 253.492 84.582 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MBR0520"
+			(at 253.492 87.122 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 247.015 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
+			(at 251.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V 0.5A Schottky Power Rectifier Diode, SOD-123"
+			(at 251.46 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d159a055-f55e-4c69-832c-0b8f0e2d7e6d")
+		)
+		(pin "1"
+			(uuid "f439c266-5226-4d9c-b683-08437f2ec09c")
+		)
+		(instances
+			(project "445pcb_round3"
+				(path "/8efcc5b4-97b0-4b2b-85b0-3435af67eb97"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -10307,75 +10386,6 @@
 			(project "445pcb_round3"
 				(path "/8efcc5b4-97b0-4b2b-85b0-3435af67eb97"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:MBR0520")
-		(at 60.96 102.87 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e540d67a-88f5-4aaa-b1c5-5b9b19756321")
-		(property "Reference" "D2"
-			(at 62.992 98.552 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MBR0520"
-			(at 62.992 101.092 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 56.515 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
-			(at 60.96 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "20V 0.5A Schottky Power Rectifier Diode, SOD-123"
-			(at 60.96 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9ca996e9-de6b-4916-9385-e940aaa783b2")
-		)
-		(pin "1"
-			(uuid "410fc8cc-24ca-43f0-af50-604df93d53bb")
-		)
-		(instances
-			(project ""
-				(path "/8efcc5b4-97b0-4b2b-85b0-3435af67eb97"
-					(reference "D2")
 					(unit 1)
 				)
 			)

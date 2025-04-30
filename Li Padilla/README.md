@@ -158,6 +158,7 @@ void loop() {
 
 ### 4/29/2025
 #### Independent IMU (ICM-20948) research
+##### Powering the IMU
 - **problem:** forgot that the operating voltage of the IMU is 1.7V-3.6V, but our VCC Li-Po battery is 3.7V
   - option 1: schottky diode (1N5817 or 1N5819) to lower the voltage ~0.3V
 
@@ -167,3 +168,12 @@ $V_{out}=V_{in} - V_f$
 - $V_{in}$ is VCC = 3.7V
 - $V_f$ = ~0.3V (voltage drop for diode)
 - note that Vf varies w/ current... anticipating a current of roughly 10-30mA; ICM draws < 10mA so $V_f$ is about 0.3V
+
+- **voltage dividers?**
+  - only correct when no current is drawn (which the IMU draws)
+  - w/ no load: $V_{out} = V_{in} * \frac{R2}{R1+R2}$
+  - w/ load (IMU acts as a parallel resistor bc draws current): $V_{out}=V{in} * \frac{R2 || R_{imu}}{R1+(R2||R_{IMU})}$
+    - R_imu spikes during sensor reads
+
+##### Reading IMU data
+- the LPF is already designed into the IMU output (allows for 5Hz)

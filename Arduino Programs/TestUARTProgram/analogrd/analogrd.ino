@@ -36,13 +36,12 @@ void loop() {
   int analog1 = analogRead(vdiff);
 
   // convert ADC val to voltage; 
-  float VCC = 3.7;
-  float voltage1 = (analog1 * VCC) / 1023.0;
+  // float VCC = 3.7;
+  // float voltage1 = (analog1 * VCC) / 1023.0;
 
   // print out analog value
-  Serial.print("Voltage: ");
-  Serial.print(voltage1, 4);  // 2 decimal places
-  Serial.println(" V");
+  Serial.print("Analog Voltage: ");
+  Serial.println(analog1);
  
   delay(1000);  // Wait 1 second before repeating
 }

@@ -13,7 +13,6 @@ void setup() {
 }
 
 void loop() {
-
     // Light up LEDs
     digitalWrite(LED1, HIGH); // Turn on LED
     digitalWrite(LED2, HIGH);

@@ -1,3 +1,6 @@
+# first iteration of this program only measured the voltage at the IMU's
+# analog pin (e.g., for a light sensor or potentiometer output, not standard IMU data).
+
 
 #define LED1 PIN_PB2    // Pin for LED1 output
 #define LED2 PIN_PD3    // Pin for LED2 output

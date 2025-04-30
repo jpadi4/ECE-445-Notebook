@@ -25,23 +25,24 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("Hello World!");  // MCU sends "Hello World" followed by a newline
-
   // turn on all LEDs
   digitalWrite(LED1, HIGH);
   digitalWrite(LED2, HIGH);
   digitalWrite(LED3, HIGH);
 
   // read analog val (0-1023)
-  int analog1 = analogRead(vdiff);
+  int analog1 = analogRead(vdiff1); // palm/knuckle gauges
+  int analog2 = analogRead(vdiff2); // thenar muscle gauges
 
   // convert ADC val to voltage; 
-  // float VCC = 3.7;
-  // float voltage1 = (analog1 * VCC) / 1023.0;
+  float VCC = 3.7;
+  float voltage1 = (analog1 / 1023.0) * VCC;
+  float voltage2 = (analog2 / 1023.0) * VCC;
 
   // print out analog value
-  Serial.print("Analog Voltage: ");
-  Serial.println(analog1);
- 
+  Serial.print(voltage1, 7);  // 7 decimal places
+  Serial.print(",");
+  Serial.println(voltage2, 7);  // 7 decimal places
+
   delay(1000);  // Wait 1 second before repeating
 }

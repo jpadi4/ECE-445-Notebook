@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red157\green0\blue210;\red245\green245\blue245;\red0\green0\blue0;
+\red144\green1\blue18;\red15\green112\blue1;\red19\green85\blue52;\red0\green0\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c68627\c0\c85882;\cssrgb\c96863\c96863\c96863;\cssrgb\c0\c0\c0;
+\cssrgb\c63922\c8235\c8235;\cssrgb\c0\c50196\c0;\cssrgb\c6667\c40000\c26667;\cssrgb\c0\c0\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 import\cf0 \strokec4  matplotlib.pyplot \cf2 \strokec2 as\cf0 \strokec4  plt\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 df = pd.read_csv(\cf5 \strokec5 "mock_imu_press_data.csv"\cf0 \strokec4 )\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 #plot az\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 plt.plot(df[\cf5 \strokec5 "time_ms"\cf0 \strokec4 ], df[\cf5 \strokec5 "az"\cf0 \strokec4 ], label=\cf5 \strokec5 "az (Z-Accel)"\cf0 \strokec4 , color=\cf5 \strokec5 "blue"\cf0 \strokec4 )\cb1 \
+\cb3 plt.axhline(\cf7 \strokec7 9.81\cf0 \strokec4 , color=\cf5 \strokec5 'gray'\cf0 \strokec4 , linestyle=\cf5 \strokec5 '--'\cf0 \strokec4 , label=\cf5 \strokec5 "Gravity baseline"\cf0 \strokec4 )\cb1 \
+\cb3 plt.title(\cf5 \strokec5 "Simulated Z-Axis Acceleration (az)\\nEvent 1: lift wrist up\\nEvent 2: rotate wrist clockwise"\cf0 \strokec4 )\cb1 \
+\cb3 plt.xlabel(\cf5 \strokec5 "Time (ms)"\cf0 \strokec4 )\cb1 \
+\cb3 plt.ylabel(\cf5 \strokec5 "Acceleration (m/s\'b2)"\cf0 \strokec4 )\cb1 \
+\cb3 plt.legend()\cb1 \
+\cb3 plt.grid(\cf8 \strokec8 True\cf0 \strokec4 )\cb1 \
+\cb3 plt.show()\cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 # Plot all three gyro axes\cf0 \cb1 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3 plt.figure(figsize=(\cf7 \strokec7 12\cf0 \strokec4 , \cf7 \strokec7 4\cf0 \strokec4 ))\cb1 \
+\cb3 plt.plot(df[\cf5 \strokec5 "time_ms"\cf0 \strokec4 ], df[\cf5 \strokec5 "gx"\cf0 \strokec4 ], label=\cf5 \strokec5 "gx"\cf0 \strokec4 )\cb1 \
+\cb3 plt.plot(df[\cf5 \strokec5 "time_ms"\cf0 \strokec4 ], df[\cf5 \strokec5 "gy"\cf0 \strokec4 ], label=\cf5 \strokec5 "gy"\cf0 \strokec4 )\cb1 \
+\cb3 plt.plot(df[\cf5 \strokec5 "time_ms"\cf0 \strokec4 ], df[\cf5 \strokec5 "gz"\cf0 \strokec4 ], label=\cf5 \strokec5 "gz"\cf0 \strokec4 )\cb1 \
+\cb3 plt.title(\cf5 \strokec5 "Simulated Gyroscope Data\\nEvent 1: lift wrist up\\nEvent 2: rotate wrist clockwise"\cf0 \strokec4 )\cb1 \
+\cb3 plt.xlabel(\cf5 \strokec5 "Time (ms)"\cf0 \strokec4 )\cb1 \
+\cb3 plt.ylabel(\cf5 \strokec5 "Angular Velocity (\'b0/s or rad/s)"\cf0 \strokec4 )\cb1 \
+\cb3 plt.legend()\cb1 \
+\cb3 plt.grid(\cf8 \strokec8 True\cf0 \strokec4 )\cb1 \
+\cb3 plt.show()\cb1 \
+}

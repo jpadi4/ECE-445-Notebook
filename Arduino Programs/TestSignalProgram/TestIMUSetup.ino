@@ -10,36 +10,36 @@
 #define imu PIN_PC5       // Pin for IMU signal input
 
 void setup() {
-  // sensor layer subsystem inputs
-  pinMode(vdiff, INPUT);
-  pinMode(vdiff1, INPUT);
-  pinMode(vdiff2, INPUT);
-  pinMode(imu, INPUT);
+	// sensor layer subsystem inputs
+	pinMode(vdiff, INPUT);
+	pinMode(vdiff1, INPUT);
+	pinMode(vdiff2, INPUT);
+	pinMode(imu, INPUT);
 
-  // communication subsystem LEDs
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
+	// communication subsystem LEDs
+	pinMode(LED1, OUTPUT);
+	pinMode(LED2, OUTPUT);
+	pinMode(LED3, OUTPUT);
 
-  Serial.begin(9600);  // Initialize serial communication at 9600 baud
+	Serial.begin(9600);  // Initialize serial communication at 9600 baud
 }
 
 void loop() {
-  Serial.println("Hello World!");  // MCU sends "Hello World" followed by a newline
+	Serial.println("Hello World!");  // MCU sends "Hello World" followed by a newline
 
-  // read analog val (0-1023)
-  int analogIMU = analogRead(imu);
+	// read analog val (0-1023)
+	int analogIMU = analogRead(imu);
 
-  // convert ADC val to voltage; 
-  float VCC = 3.7;
-  float voltageIMU = (analogIMU * VCC) / 1023.0;
-  float accel_g = (voltageIMU - (VCC/2)) / 0.3
-  
-  // 0G is VCC/2 for REGOUT
+	// convert ADC val to voltage; 
+	float VCC = 3.7;
+	float voltageIMU = (analogIMU * VCC) / 1023.0;
+	float accel_g = (voltageIMU - (VCC/2)) / 0.3
+	
+	// 0G is VCC/2 for REGOUT
 
-  // print out analog value
-  Serial.print("Acceleration (g): ");
-  Serial.println(acceleration_g);
- 
-  delay(1000);  // Wait 1 second before repeating
+	// print out analog value
+	Serial.print("Acceleration (g): ");
+	Serial.println(acceleration_g);
+	
+	delay(1000);  // Wait 1 second before repeating
 }

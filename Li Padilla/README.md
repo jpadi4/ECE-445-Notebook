@@ -177,3 +177,4 @@ $V_{out}=V_{in} - V_f$
 
 ##### Reading IMU data
 - the LPF is already designed into the IMU output (allows for 5Hz)
+- if we integrate the software-side with Python, then it will be easy to time :D !

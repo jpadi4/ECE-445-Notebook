@@ -35,23 +35,28 @@ void loop() {
   digitalWrite(LED2, HIGH);
   digitalWrite(LED3, HIGH);
 
+  // Read all analog inputs
+  int analog0 = analogRead(vdiff);
+  int analog1 = analogRead(vdiff1);
+  int analog2 = analogRead(vdiff2);
+  int analog3 = analogRead(imu);
+
   // Read and convert all analog inputs
-  float voltage0 = adcToVoltage(analogRead(vdiff));    // Bridge 1
-  float voltage1 = adcToVoltage(analogRead(vdiff1));   // Bridge 2
-  float voltage2 = adcToVoltage(analogRead(vdiff2));   // Bridge 3
-  float voltage3 = adcToVoltage(analogRead(imu));      // IMU
+  // float voltage0 = adcToVoltage(analogRead(vdiff));    // Bridge 1
+  // float voltage1 = adcToVoltage(analogRead(vdiff1));   // Bridge 2
+  // float voltage2 = adcToVoltage(analogRead(vdiff2));   // Bridge 3
+  // float voltage3 = adcToVoltage(analogRead(imu));      // IMU
 
   // Print all values
   Serial.print("Bridge 1: ");
-  Serial.print(voltage0, 4);
-  Serial.print(" V | Bridge 2: ");
-  Serial.print(voltage1, 4);
-  Serial.print(" V | Bridge 3: ");
-  Serial.print(voltage2, 4);
-  Serial.print(" V | IMU: ");
-  Serial.print(voltage3, 4);
-  Serial.println(" V");
-  // Bridge 1: 1.8500 V | Bridge 2: 2.1000 V | Bridge 3: 0.7500 V | IMU: 1.6500 V
+  Serial.print(analog0);
+  Serial.print(" | Bridge 2: ");
+  Serial.print(analog1);
+  Serial.print(" | Bridge 3: ");
+  Serial.print(analog2);
+  Serial.print(" | IMU: ");
+  Serial.print(analog3);
+  Serial.println("");
 
   delay(1000);  // Wait 1 second-- maybe alter this for higher frequency?
 }

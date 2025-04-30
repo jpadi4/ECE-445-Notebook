@@ -27,19 +27,21 @@ void setup() {
 void loop() {
   Serial.println("Hello World!");  // MCU sends "Hello World" followed by a newline
 
+  // turn on all LEDs
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  digitalWrite(LED3, HIGH);
+
   // read analog val (0-1023)
-  int analogIMU = analogRead(imu);
+  int analog1 = analogRead(vdiff);
 
   // convert ADC val to voltage; 
-  float VCC = 3.7;
-  float voltageIMU = (analogIMU * VCC) / 1023.0;
-  float accel_g = (voltageIMU - (VCC/2)) / 0.3
-  
-  // 0G is VCC/2 for REGOUT
+  // float VCC = 3.7;
+  // float voltage1 = (analog1 * VCC) / 1023.0;
 
   // print out analog value
-  Serial.print("Acceleration (g): ");
-  Serial.println(acceleration_g);
+  Serial.print("Analog Voltage: ");
+  Serial.println(analog1);
  
   delay(1000);  // Wait 1 second before repeating
 }

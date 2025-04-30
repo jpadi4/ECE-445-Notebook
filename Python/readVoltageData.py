@@ -20,7 +20,9 @@ def read_voltage_data():
                     line = ser.readline().decode('utf-8', errors='ignore').strip()
                     if line:
                         try:
-                            voltage = float(line)
+                            line_objs = line.split(': ')
+                            volts = line_objs[1]
+                            voltage = float(volts)
                             now = datetime.now()
 
                             if start_time is None:

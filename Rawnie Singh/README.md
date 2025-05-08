@@ -61,7 +61,7 @@ code block
 
 ### 4/29/2025
 #### Independent __topic__ research
-##### Powering the IMU
+##### topic
 - **problem:** text
 
 ![new IMU schematic](image)

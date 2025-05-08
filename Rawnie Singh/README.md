@@ -1,6 +1,9 @@
 # Rawnie Singh ECE 445 Notebook
 ### 2/11/2025
-- 
+- prior to team meeting on 2/11/2025, designed block diagram for proposal document & first TA meeting
+- **insert image here**
+- modified high level requirements post-TA meeting
+- reference Team Meetings/250211.md
 
 ### 2/13/2025
 - 

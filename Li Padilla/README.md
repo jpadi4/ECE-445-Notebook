@@ -1,22 +1,38 @@
 # Li Padilla ECE 445 Notebook
+*We mostly did designing & quantitative testing as a team in the lab, so most of my individual lab entries are independent research.* 
 ### 2/11/2025
-- Set up GitHub repo
-- Preparing for first meeting with TA 
+#### Objectives
+- Create GitHub repo for notebook
+- Prep for first meeting with TA
+
+#### What was accomplished
+- Set up GitHub repo 
 - Set up headings and subheadings for project proposal
 - Set up team contract document
 
 ### 2/13/2025
-- created visual aid
+#### Objectives
+- Create visual aid
 
+#### What was accomplished
+ 
 ### 2/19/2025
+#### Objectives
 - submitted request for strain gauges + IMU
+#### What was accomplished
 
 ### 2/27/15
+#### Objectives
+
 - purchase request for strain gauges/IMU cancelled, had to be resubmitted
 - created new purchase request for strain gauges/IMUs
+#### What was accomplished
 
 ### 3/7/2025
-- Created the physical design drawing with sensor placements
+#### Objectives
+- Created the physical design drawing with sensor placements based off team meeting (250307.md)
+
+#### What was accomplished
 
 ### 3/9/2025
 ##### Researching how to display the output voltage of the voltage amplifier

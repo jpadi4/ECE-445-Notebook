@@ -1,7 +1,7 @@
 # Rawnie Singh ECE 445 Notebook
 ### 2/11/2025
 - prior to team meeting on 2/11/2025, designed block diagram for proposal document & first TA meeting
-- - **insert image here**
+- ![](/Users/rawniesingh/Desktop/Screenshot 2025-05-08 at 5.22.57 PM.png)
 - completed electrical/hardware focused subsystem design details on proposal document (power, amplification, etc)
 - modified high level requirements post-TA meeting on 2/11
 - - [a relative link](Team Meetings/250211.md)

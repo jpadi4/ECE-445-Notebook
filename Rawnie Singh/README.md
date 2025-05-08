@@ -1,10 +1,10 @@
 # Rawnie Singh ECE 445 Notebook
 ### 2/11/2025
 - prior to team meeting on 2/11/2025, designed block diagram for proposal document & first TA meeting
-- <img width="622" alt="Screenshot 2025-05-08 at 5 22 57 PM" src="https://github.com/user-attachments/assets/78c833d7-dc96-4325-acdf-62cb7e2e2f45" />
+ <img width="622" alt="Screenshot 2025-05-08 at 5 22 57 PM" src="https://github.com/user-attachments/assets/78c833d7-dc96-4325-acdf-62cb7e2e2f45" />
 - completed electrical/hardware focused subsystem design details on proposal document (power, amplification, etc)
 - modified high level requirements post-TA meeting on 2/11
-- - [a relative link](Team Meetings/250211.md)
+- Refer to [2/11/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250211.md)
 
 ### 2/13/2025
 - 

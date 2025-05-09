@@ -19,7 +19,13 @@
 ### 3/9/2025
  - Refer to [3/9/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250309.md)
  - Designed initial iteration of operational amplifier w/gain
-   **insert image**
+   ![IMG_DB242E83A6BF-1](https://github.com/user-attachments/assets/5ff163b7-6e30-470e-a87e-d04d4ac79928)
+
+
+ - Breadboard demo progress update:
+   ![IMG_AEAE306623BB-1](https://github.com/user-attachments/assets/8c4fe884-bcb7-4343-a034-5081bbd20a6f)
+   ![IMG_2835](https://github.com/user-attachments/assets/d87ff0a8-b54e-4367-afab-b05c029b3641)
+
 
 ### 3/20/2025
 - Design 1st iteration of PCB 

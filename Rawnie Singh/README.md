@@ -8,76 +8,59 @@
  - Refer to [2/11/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250211.md)
 
 ### 2/13/2025
-- 
+ - Refer to [2/18/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250218.md)
 
-### 2/19/2025
-- 
-
-### 2/27/15
--
+### 3/1/2025
+ - Refer to [3/1/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250301.md)
 
 ### 3/7/2025
-- 
+ - Refer to [3/7/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250307.md)
 
 ### 3/9/2025
-##### topic
+ - Refer to [3/9/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250309.md)
+ - Designed initial iteration of operational amplifier w/gain
+   **insert image**
 
-![](image path)
-![](image path)
-- details 
-
-**topic**
-1. details
-
-```cpp
-code block
-``` 
-
-- details
-
-### 3/10/2025
-- 
-
-```cpp
-code block
-```
+### 3/20/2025
+- Design PCB 
+   **insert image**
 
 ### 4/1/2025
-- details
+ - Refer to [4/1/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250401.md)
+ - Order PCB
 
+### 4/9/2025
+ - Refer to [4/9/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250409.md)
+ - Redesign & order PCB
+**insert image**
 
-### 4/2/2025
-- details
+### 4/14/2025
+ - Refer to [4/14/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250414.md)
 
-### 4/6/2025
-- details
+### 4/20/2025 
+ - Refer to [4/20/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250420.md)
 
-### 4/14/2025 
-- details
+### 4/21/2025 
+ - Refer to [4/21/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250421.md)
 
-**todo**
-- list
+### 4/22/2025 
+ - Refer to [4/22/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250422.md)
 
-### 4/19/2025 
-- details
+### 4/23/2025 
+ - Redesign & order modified PCB
+ - Refer to [4/23/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250423.md)
 
-**todo**
-- list
+### 4/25/2025 
+ - Refer to [4/25/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250425.md)
 
-### 4/29/2025
-#### Independent __topic__ research
-##### topic
-- **problem:** text
+### 4/27/2025 
+ - Refer to [4/27/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250427.md)
 
-![new IMU schematic](image)
+ ### 4/28/2025 
+ - Refer to [4/28/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250428.md)
 
-$V_{out}=V_{in} - V_f$
-- $V_{in}$ is VCC = 3.7V
-- $V_f$ = ~0.3V (voltage drop for diode)
-- note that Vf varies w/ current... anticipating a current of roughly 10-30mA; ICM draws < 10mA so $V_f$ is about 0.3V
+### 4/29/2025 
+ - Refer to [4/29/25 team notes](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Team%20Meetings/250429.md)
+ - Wrote program to generate mock IMU data and produce graphical analysis of the motions of 2 unique users. This data was then run through an FFT analysis written by Li to generate meaningul signals
+ - See code here: [plot imu data](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Python/plot-imu-data.py), [generare mock imu data](https://github.com/jpadi4/ECE-445-Notebook/blob/main/Python/code-to-generate-imu-data.py)
 
-- **question**
-  - lost
-
-##### topic
-- list
